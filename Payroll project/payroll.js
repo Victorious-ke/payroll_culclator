@@ -44,7 +44,8 @@ form.addEventListener("submit",function(e){
         payee=((((taxable_income-32333)*0.30)+(24000*0.1)+(8333*0.25))-relief)
       }
       document.getElementById("payee").innerHTML=payee
-
+      form.reset();
+      
       //nhif
       let nhif=0
       if (gross_salary <= 5999) {
