@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payroll.css" />
+    <title>Payroll Calculator</title>
+  </head>
+  <body>
+    <h1 id="brand">payroll</h1>
+    <h1 id="def">NET PAY CALCULATOR</h1>
+    <p>Enter the gross salary below amount to calculate your net amount</p>
+    <div class="input">
+      <form id="my_form">
+        <label for="basic_salary"  >Basic Salary</label>
+        <span class="kes">KES</span>
+        <input type="number" id="basic_salary" placeholder="Enter basic salary" />
+        <label for="benefits">Benefits</label>
+        <span class="kes">KES</span>
+        <input type="number" id="benefits" placeholder="Enter benefits"/>
+        <input type="submit" value="Calculate" />
+      </form>
+      <h3 id="error" style="color: red"></h3>
+    </div>
+    <table border="1">
+      <tr>
+        <th>Description</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Gross salary</td>
+        <td id="gross_salary"></td>
+      </tr>
+      <tr>
+        <td>NSSF</td>
+        <td id="nssf"></td>
+      </tr>
+      <tr>
+        <td>NHDF</td>
+        <td id="nhdf"></td>
+      </tr>
+      <tr>
+        <td>Taxable Income</td>
+        <td id="taxable_income"></td>
+      </tr>
+      <tr>
+        <td>Relief</td>
+        <td id="relief"></td>
+      </tr>
+      <tr>
+        <td>Payee</td>
+        <td id="payee"></td>
+      </tr>
+      <tr>
+        <td>NHIF</td>
+        <td id="nhif"></td>
+      </tr>
+      <tr>
+        <td>Net pay</td>
+        <td id="net_pay"></td>
+      </tr>
+    </table>
+
+    <script src="payroll.js"></script>
+  </body>
+</html>
