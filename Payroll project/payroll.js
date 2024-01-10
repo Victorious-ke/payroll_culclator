@@ -40,12 +40,19 @@ form.addEventListener("submit",function(e){
         payee= relief
       }else if(taxable_income>24000 && taxable_income<=32333){
         payee=(((taxable_income-24000)*0.25)+(24000*0.1)-relief)
-      }else{
+      
+      }else if(taxable_income>32333 && taxable_income<=500000){
         payee=((((taxable_income-32333)*0.30)+(24000*0.1)+(8333*0.25))-relief)
+      }
+      else if(taxable_income>500000 && taxable_income<=800000){
+        payee= ((taxable_income-500000)*0.325)+((24000*0.1)+(8333*0.25)+(467667*0.3)-relief)
+      }
+      else{
+        payee=((taxable_income-800000)*0.35)+((24000*0.1)+(8333*0.25)+(467667*0.3)+(300000*0.325))-relief
       }
       document.getElementById("payee").innerHTML=payee
       form.reset();
-      
+
       //nhif
       let nhif=0
       if (gross_salary <= 5999) {
@@ -86,7 +93,7 @@ form.addEventListener("submit",function(e){
       document.getElementById("nhif").innerHTML=nhif
 
       //net pay
-      let net_pay=taxable_income-((nhif+payee)-relief)
+      let net_pay=gross_salary-((nhif+payee+nssf+nhdf))
       document.getElementById("net_pay").innerHTML=net_pay
   }
 
