@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Area of a triangle</h1>
+  <form id="my_form">
+    <label for="height">height</label>
+    <input type="number" id="height">
+    <label for="base">base</label>
+    <input type="number" id="base">
+    <input type="submit" value="calculate">
+
+
+  </form>
+  <h2 id="area"></h2>
+  
+  <script>
+    let form=document.getElementById("my_form");
+    form.addEventListener("submit", function(e){
+      e.preventDefault()
+      let height=document.getElementById("height").value;
+      let base=document.getElementById("base").value;
+      if(height.length==0 || base.length==0){
+        document.getElementById("area").innerHTML="fill all fields"
+      }
+      else{
+        let area=(base*height)/2
+        document.getElementById("area").innerHTML=area
+      }
+    })
+    // let base=prompt("enter base")
+      // let height=prompt("enter height")
+      
+  </script>
+</body>
+
+</html>

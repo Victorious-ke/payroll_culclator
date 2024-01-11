@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let total_stock=0
+    prods = [["omo","30kshs","300"], ["milk","50kshs","200"],["bread","45kshs","359"], ["coffee","5kshs","79"],["books","60ksh","800"]]
+
+    // let new_prods=prods[0][2]
+    for(i=0; i<prods.length; i++){
+      // console.log(prods[i][2])
+      let stock=Number((prods[i][2]))
+      total_stock+=stock
+    }
+    console.log(total_stock)
+    console.log(total_stock+stock)
+    console.log(total_stock+=stock)
+  </script>
+</body>
+</html>

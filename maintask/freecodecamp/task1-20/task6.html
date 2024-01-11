@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let attempt = 0;
+      let key = "admin@123";
+
+      for (let i = 0; i < 4; i++) {
+        let password = prompt("enter password");
+        if (password == key) {
+          console.log("access granted");
+          break;
+        } else {
+          console.log("incorrect password");
+        }
+      }
+      if (attempt >= 4) {
+        console, log("account blocked");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let phone_number = prompt("enter number");
+      if (phone_number.startsWith("+254") && phone_number.length == 13) {
+        phone_number = "is valid";
+      } else if (phone_number.startsWith("254") && phone_number.length == 12) {
+        phone_number = "+" + phone_number + "is valid";
+      } else if (phone_number.startsWith("07") && phone_number.length == 10) {
+        phone_number = "+254" + phone_number.slice(1, 10) + "is valid";
+      }
+      if (phone_number.startsWith("71") && phone_number.length == 9) {
+        phone_number = "+254" + phone_number + "is valid";
+      }
+      if (phone_number.startsWith("01") && phone_number.length == 10) {
+        phone_number = "+254" + phone_number.slice(1, 10) + "is valid";
+      }
+      console.log(phone_number);
+
+  </script>
+</body>
+</html>
