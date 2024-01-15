@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The element object</h1>
+    <h2>The textContent property</h2>
+    <button id="myBtn">Try it</button>
+    <p>The text content of the button is:</p>
+    <p id="demo"></p>
+      
+    <script>
+      let text = document.getElementById("myBtn").textContent;
+      document.getElementById("demo").innerHTML = text;
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calc_gross_salary(basic_salary, benefits) {
+        let gross_salary = basic_salary + benefits;
+
+        return gross_salary;
+      }
+      let basic_salary = Number(prompt("enter basic salary"));
+      let benefits = Number(prompt("enter benefits"));
+      let result = calc_gross_salary(basic_salary, benefits);
+      console.log(result);
+
+      // nhif
+      function calc_nhif(gross_salary) {
+        if (gross_salary <= 5999) {
+          let nhif = 150;
+        } else if (gross_salary >=6000 && gross_salary <= 7999) {
+          nhif = 300;
+        }else if(gross_salary>=8000 && gross_salary<=11999){
+          nhif= 400;
+        }else if(gross_salary >=12000 && gross_salary<=14999){
+          nhif= 
+        } else{
+          nhif=1700
+        }
+        return nhif;
+      }
+      let result2=calc_nhif(result)
+      console.log(result2)
+      // nssf
+      function calc_nssf(gross_salary){
+        if(gross_salary<=18000){
+          let nssf=gross_salary*0.06
+        }else{
+          nssf=18000*0.06
+        }
+        return nssf;
+      }
+      let result3= calc_nssf(result)
+      console.log(result3)
+    </script>
+  </body>
+</html>

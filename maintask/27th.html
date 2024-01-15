@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let height=prompt("enter height");
+      // let base=prompt("enter base");
+      // let area=(height*base)/2
+      // console.log(area)
+
+      // question2
+      // let number=prompt("enter number");
+      // if(number%4==0){
+      //   alert("divisible by 4")
+      // }else if(number%2==0){
+      //   alert("even")
+      // }else{
+      //   alert("odd")
+      // }
+      // 3
+      // let phone_number = prompt("enter number");
+      // if (phone_number.startsWith("+254") && phone_number.length == 13) {
+      //   phone_number = "valid";
+      // } else if (phone_number.startsWith("254") && phone_number.length == 12) {
+      //   phone_number = "+" + phone_number + "is valid";
+      // } else if (phone_number.startsWith("07") && phone_number.length == 10) {
+      //   phone_number = "+" + phone_number.slice(1, 10) + "is valid";
+      // } else if (phone_number.startsWith("01") && phone_number.length == 10) {
+      //   phone_number = "+" + phone_number.slice(1, 10) + "is valid";
+      // } else if (phone_number.startsWith("7") && phone_number.length == 9){
+      //   phone_number="+254" + phone_number + "is valid"
+      // }else{
+      //   phone_number="not valid"
+      // }
+      // console.log(phone_number)
+
+      // 4
+
+      // let email=prompt("enter email");
+      // if(email.includes("@"&&".")){
+      //   email="valid"
+      // }else{
+      //   email="not valid"
+      // }
+      // console.log(email)
+      // 5
+      // let num1 = prompt("enter num1");
+      // let num2 = prompt("enter num2");
+      // let num3 = prompt("enter num3");
+      // if (num1 > num2 && num1 > num3) {
+      //   // number = num1 + "is largest";
+      //   console.log("num1 is largest")
+      // } else if (num2 > num1 && num2 > num3) {
+      //   // number = num2 + "is largest";
+      //   console.log("num2 is largest")
+      // } else {
+      //   // number = num3 + "is largest";
+      //   console.log("num3 is largest")
+      // }
+      // // console.log(number);
+
+      // 6
+      // for(i=0; i<5; i++)
+      // let password = prompt("enter password");
+      // key = "admin@123";
+
+      // 7
+
+      // let marks = prompt("enter marks");
+      // if (marks >= 0 && marks <= 100) {
+      //   if (marks > 79) {
+      //     grade = "A";
+      //   } else if (marks <= 79 && marks >= 60) {
+      //     grade = "B";
+      //   } else if (marks <= 59 && marks >= 50) {
+      //     grade = "C";
+      //   } else if (marks <= 49 && marks >= 40) {
+      //     grade = "D";
+      //   } else {
+      //     grade = "E";
+      //   }
+      // } else {
+      //   console.log("not valid");
+      // }
+      // console.log(grade)
+
+      // task 8
+      let speed = prompt("enter speed");
+      let speed_limit = 70;
+      if (speed <= speed_limit) {
+        points = "OK";
+      } else if (speed > 70 && speed <= 75) {
+        points = "1";
+      } else if (speed > 75) {
+        points = Math.floor(speed - speed_limit) / 5;
+      } else {
+        points = Math.floor(speed - speed_limit) / 5;
+        if(points > 12) {
+          points = "license suspended";
+        }
+      }
+      alert(points);
+
+    </script>
+  </body>
+</html>

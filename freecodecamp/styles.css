@@ -76,6 +76,8 @@ input[type="file"]{
 a{
  color: #dfdfe2; 
 }
+
+/* last type of an element */
 fieldset:last-of-type{
   border-bottom: none;
 }

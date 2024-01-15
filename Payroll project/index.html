@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payroll Calculator</title>
+    <link rel="stylesheet" href="/Payroll project/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="nav">
+      <nav id="nav_bar">
+        <span><i class="fa-solid fa-kiwi-bird fa-sm" style="color: #ed9940;"></i> pay</span>
+      </nav>
+      <nav id="nav_bar1">
+        <span>roll</span>
+      </nav>
+      <h1 id="def">NET PAY CALCULATOR</h1>
+      <p>Enter the gross salary below amount to calculate your net amount</p>
+    </div>
+    <div class="table">
+      <form id="my_form">
+        <label for="basic_salary">Basic Salary</label>
+        <span class="kes">KES</span>
+        <input
+          type="number"
+          id="basic_salary"
+          placeholder="Enter basic salary" />
+        <label for="benefits">Benefits</label>
+        <span class="kes">KES</span>
+        <input type="number" id="benefits" placeholder="Enter benefits" />
+        <button id="btn" type="submit">Calculate</button>
+      </form>
+      <h3 id="error" style="color: red"></h3>
+      <table border="1" id="my_table">
+        <tr>
+          <th>Description</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Gross salary</td>
+          <td id="gross_salary"></td>
+        </tr>
+        <tr>
+          <td>NSSF</td>
+          <td id="nssf"></td>
+        </tr>
+        <tr>
+          <td>NHDF</td>
+          <td id="nhdf"></td>
+        </tr>
+        <tr>
+          <td>Taxable Income</td>
+          <td id="taxable_income"></td>
+        </tr>
+        <tr>
+          <td>Relief</td>
+          <td id="relief"></td>
+        </tr>
+        <tr>
+          <td>Payee</td>
+          <td id="payee"></td>
+        </tr>
+        <tr>
+          <td>NHIF</td>
+          <td id="nhif"></td>
+        </tr>
+        <tr>
+          <td>Net pay</td>
+          <td id="net_pay"></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="/Payroll project/script.js"></script>
+  </body>
+</html>
